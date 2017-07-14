@@ -1,0 +1,164 @@
+/*-----------------------------------------------------------------------------
+Tecnologias Web - Exercício Floats
+Autor:  Thiago Dias (thiagodias@aluno.puc-rio.br)
+-----------------------------------------------------------------------------*/
+
+/* =Reset
+--------------------------------------------------------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* =Gerais
+--------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #595959;
+    font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.linha:before,
+.linha:after {
+  content: "";
+  display: table;
+}
+.linha:after {
+  clear: both;
+}
+.linha {
+  clear: both;
+  *zoom: 1;
+}
+
+
+
+.principal{
+    width: 960px;
+    background: #fff;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    
+}
+
+.chamada{
+	padding: 20px;
+	background: #33ffbb;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.coluna01{
+	float: left;  
+	width: 250px; 
+}
+
+.coluna02{
+	float: right;  
+	width: 545px;
+}
+
+.box_secundario{
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	
+}
+
+.lista_abc li{
+	float: left;
+	border: 1px solid blue;
+	padding: 10px 8px;
+	width: 20%;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: right;
+}
+
+.publicidade{
+	padding: 20px;
+	background: #9cf;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 20px;
+	text-decoration: none;
+    text-transform: uppercase;
+}
+
+.publicidade a{
+		text-decoration: none;
+		color: black; 
+}
+
+.noticias_secundarias{
+    margin: 0px auto;
+    width: 98%;
+ }
+
+.noticias_secundarias section{
+	float: left;
+	width: 28%;
+	background: #99cccc;
+	padding: 25px;
+}
+
+.noticias_secundarias section+section{
+	margin-left: 8%;
+}
+
+.noticias_secundarias h3{
+	font-weight: bold;
+	font-size: 15px;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.noticia02 h3{
+	text-align: center;
+}
+
+.noticia03 {
+	text-align: right;
+}
+
+.imagem {
+	float: left;
+	background: black;
+	padding: 25px;
+	margin-right: 18px;
+}
+
+.popup{
+    position: absolute;
+    background: black;
+    color: #fff;
+    padding: 2%;
+    width: 30%;
+    border: 8px solid #333;
+    top: 12%;
+    left: 50%;
+    margin-left: -15%;
+    text-align: center;
+}
+
+.popup h4{
+    background: #333;
+    margin-bottom: 20px;
+    padding: 5px;   
+}
+
+.popup p{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.popup button{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
